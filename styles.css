@@ -205,7 +205,7 @@ h4 {
     margin-top: 50px;
 }
 
-.footer .container p a {
+.footer .container-fluid p a {
     text-decoration: none;
     color: #cd8dff;
     transition: color 0.3s ease;
