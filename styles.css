@@ -58,6 +58,7 @@ h4 {
 }
 
 .section-title {
+    font-weight: bold;
     text-transform: uppercase;
     color: #cd8dff;
     padding: 0 0 0.6em;
@@ -147,6 +148,13 @@ h4 {
 
 
 
+/* NEWSLETTER */
+
+#subscribe:hover {
+    background-color: #9000ff;
+    color: aliceblue;
+}
+
 /* MERCH */
 
 #merch-section {
@@ -157,7 +165,12 @@ h4 {
   .card:hover {
     transform: scale(1.05);
   }
-  
+} 
+
+#official-shop:hover {
+    background-color: #9000ff;
+    color: aliceblue;
+}
 
 
 /* CONTACTS */
@@ -185,22 +198,21 @@ h4 {
 
 /* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
 
-#.footer {
+.footer {
     background-color: black;
     text-align: center;
     padding: 20px;
     margin-top: 50px;
-    color: #cd8dff;
 }
 
 .footer .container p a {
     text-decoration: none;
-    color: #cd8dff; /* Purple for the devsoraia link */
+    color: #cd8dff;
     transition: color 0.3s ease;
 }
 
 .footer p a:hover {
-    color: aliceblue; /* Turns aliceblue on hover */
+    color: aliceblue;
 }
 
 .footer ul {
@@ -218,18 +230,19 @@ h4 {
 .footer li a {
     display: inline-block;
     margin: 0;
-    font-size: 1.25rem; /* Icons are slightly larger */
-    color: #cd8dff; /* Default icon color */
+    font-size: 1.25rem;
     padding: 10px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footer li a:hover {
-    color: aliceblue; /* Turns aliceblue on hover */
-    transform: scale(1.2); /* Slight zooming effect */
+    transform: scale(1.2);
 }
 
-.footer .social-icon i {
-    cursor: pointer;
-    transition: color 0.3s ease, transform 0.3s ease;
+.footer li a i {
+    color: #cd8dff;
+}
+
+.footer li a i:hover {
+    color: aliceblue;
 }
