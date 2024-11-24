@@ -16,10 +16,13 @@ Bootstrap5: Leveraged for layout, components, and responsive design.
 
 Notes
 
+Royalty-free images from Pexels.com were used.
+
 No JavaScript: This project does not include any JavaScript functionality. All features and interactivity are implemented solely using HTML and CSS (via Bootstrap5).
 
 How to View
 
-You can view the deployed version of the website here: Chaotic Harmony Mockup Website
+You can view the deployed version of the website here: [Chaotic Harmony Mockup Website](https://devsoraia.github.io/MockupWebsite-ChaoticHarmony/)
 
 Thanks for reading!
+Soraia
