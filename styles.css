@@ -5,29 +5,7 @@ html, body {
     padding: 0;
 }
 
-
-h4 {
-    padding-bottom: 0.5em;
-
-}
-
-#home {
-    margin-bottom: 0; 
-}
-
-#gallery, #newsletter, #bio {
-    background: rgba(146, 51, 170, 0.1)
-}
-
-
-.section-title {
-    text-transform: uppercase;
-    color: #cd8dff;
-    padding: 0 0 0.6em;
-}
-
-
-/* NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+/* NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV*/
 .navbar {
     background-color: black;
 }
@@ -59,97 +37,88 @@ h4 {
     color: aliceblue;
 }
 
-  
-
-/* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
-
 
 /* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
+
 main {
     display: block;
 }
 
+h4 {
+    padding-bottom: 0.5em;
 
-    /* HOME GIF/VID */
-    #band-home {
-        width: 100%;
-        margin-bottom: 1.5rem;
-        height: auto;
-        border-radius: 0px;
+}
+
+#home {
+    margin-bottom: 0; 
+}
+
+#gallery, #newsletter, #bio {
+    background: rgba(146, 51, 170, 0.1)
+}
+
+.section-title {
+    text-transform: uppercase;
+    color: #cd8dff;
+    padding: 0 0 0.6em;
+}
+
+
+/* HOME GIF/VID */
+
+#band-home {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    height: auto;
+    border-radius: 0px;
+}
+
+/* GALLERY */
+    
+    /* PICTURES */
+
+    .carousel-item img {
+        max-height: 500px;
+        width: auto;
+        object-fit: cover;
+      }
+    
+
+    /* VIDEOS SLIDESHOW */
+
+    #videoCarousel {
+        display: flex;
+        overflow-x: auto;
+        gap: 0.5rem;
     }
-
-
-
-
-    /* GALLERY */
-
+    .carousel-inner iframe, video {
+        height: 300px;
+        max-width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+        transition: transform 0.3s;
+    }
+    .carousel-inner video {
+        max-height: 300px;
+        width: auto;
+        object-fit: cover; */
+        transition: transform 0.3s;
     }
     
-        /* PICS carousel */
-        #carouselPictures {
-            display: flex;
-            overflow-x: auto; /* horizontal scrolling */
-            gap: 0.5rem;
-        }
-        
-        .carousel-inner {
-            display: flex;
-            overflow-x: auto;
-            gap: 0.5rem;
-            max-height: 300px;
-            width: 100%;
-        }
-        .carousel-inner a {
-            height: 300px;
-            max-width: 100%;
-            object-fit: cover;
-            border-radius: 5px;
-            transition: transform 0.3s;
-        }
-
-        .carousel-inner img {
-            max-height: 300px; /* I don't want them to be taller then 300px in this situation */
-            width: auto; /* this maintains the aspect ratio of each picture when resizing */
-            object-fit: cover; /* this ensures the images fill the given space, covering it without distortion. */
-            transition: transform 0.3s; /* Optional: Add a hover effect */
-        }
-    
-
-        /* VIDEOS SLIDESHOW? */
-        #videoCarousel {
-            display: flex;
-            overflow-x: auto;
-            gap: 0.5rem;
-        }
-        .carousel-inner iframe, video {
-            height: 300px;
-            max-width: 100%;
-            object-fit: cover;
-            border-radius: 5px;
-            transition: transform 0.3s;
-        }
-        .carousel-inner video {
-            max-height: 300px;
-            width: auto;
-            object-fit: cover; */
-            transition: transform 0.3s;
-        }
-    
-/* TEST TEST TEST TEST */
-.thumbnails_shows_sliding {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-}
-.thumbnails_shows_sliding::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
-}
-.thumbnails_shows_sliding video {
-    aspect-ratio: 16/9; /* Maintains aspect ratio for images */
-}
-
+    .thumbnails_shows_sliding {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .thumbnails_shows_sliding::-webkit-scrollbar {
+        display: none;
+    }
+    .thumbnails_shows_sliding video {
+        aspect-ratio: 16/9;
+    }
 
 
 /* TOUR */
+
 .table th {
     text-transform: uppercase;
     font-size: 1.1rem;
@@ -167,8 +136,6 @@ main {
     background-color: #9000ff;
 }
 
-
-
 .btn {
     text-transform: uppercase;
     font-weight: bold;
@@ -180,22 +147,21 @@ main {
 
 
 
-
 /* MERCH */
+
 #merch-section {
 
   .card {
     transition: transform 0.3s ease;
   }
   .card:hover {
-    transform: scale(1.05); /* Subtle zoom effect on hover */
+    transform: scale(1.05);
   }
   
 
 
+/* CONTACTS */
 
-
-/* CONTACTS CONTACTS CONTACTS CONTACTS CONTACTS CONTACTS CONTACTS */
   #contacts a {
     color: #cd8dff;
     text-decoration: none;
@@ -218,6 +184,7 @@ main {
   
 
 /* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+
 #.footer {
     background-color: black;
     text-align: center;
